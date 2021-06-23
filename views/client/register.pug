@@ -1,0 +1,56 @@
+extends ../layouts/login-layout.pug
+
+block content
+        .registerwrapper
+            .title Registration
+            - if(errorMessage)
+                    .alert.alert-danger
+                        strong #{errorMessage}!      
+            .content
+                form#registerForm(method='post')
+                    .user-details
+                        .regifield.fname
+                            .input-area
+                                input(type='text', name="firstName" ,  placeholder='Frist Name')
+                                i.icon.fas.fa-user-graduate
+                                i.error.error-icon.fas.fa-exclamation-circle
+                            .error.error-txt Frist Name can't be blank
+                        .regifield.lname
+                            .input-area
+                                input(type='text', name="lastName" ,   placeholder='Last Name')
+                                i.icon.fas.fa-user-graduate
+                                i.error.error-icon.fas.fa-exclamation-circle
+                            .error.error-txt Last Name can't be blank
+                        .regifield.uname
+                            .input-area
+                                input(type='text', name="username" ,   placeholder='User Name')
+                                i.icon.fas.fa-at
+                                i.error.error-icon.fas.fa-exclamation-circle
+                            .error.error-txt User Name can't be blank
+                        .regifield.email
+                            .input-area
+                                input(type='text', name="email" ,   placeholder='Email Address')
+                                i.icon.fas.fa-envelope
+                                i.error.error-icon.fas.fa-exclamation-circle
+                            .error.error-txt Email can't be blank
+                        .regifield.password
+                            .input-area
+                                input#password(type='password' , name="password", placeholder='Password' oninput='strengthChecker()')
+                                i.icon.fas.fa-lock
+                                i.error.error-icon.fas.fa-exclamation-circle
+                            .error.error-txt Password can't be blank
+                            br
+                            #strength-bar
+                            p#msg
+                        .regifield.cpassword
+                            .input-area
+                                input#passwordConf(type='password' , name="passwordConf" , placeholder='Confirm Password' oninput='strengthChecker()')
+                                i.icon.fas.fa-lock
+                                i.error.error-icon.fas.fa-exclamation-circle
+                            .error.error-txt Confirm Password can't be blank
+                        input(type='submit' value='Register')
+                        .sign-txt
+                            | Already have an account? 
+                            a(href='/login') Signin now
+                    block scripts
+                        script(src="/js/client/registerPage.js")

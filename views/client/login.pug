@@ -1,0 +1,29 @@
+extends ../layouts/login-layout.pug
+
+block content
+    .wrapper
+        header CaMpUsKwIrY?
+        - if(errorMessage)
+            .alert.alert-danger
+                strong #{errorMessage}!  
+        form(method='post')
+            .field.email
+                .input-area
+                    input(type='text', name="logUsername"   ,  placeholder='Email or Username')
+                    i.icon.fas.fa-envelope
+                    i.error.error-icon.fas.fa-exclamation-circle
+                .error.error-txt Email or Username can't be blank
+            .field.password
+                .input-area
+                    input#password(type='password' , name="logPassword"  , placeholder='Password')
+                    i.icon.fas.fa-lock
+                    i.error.error-icon.fas.fa-exclamation-circle
+                .error.error-txt Password can't be blank
+            .pass-txt
+                a(href='#') Forgot password?
+            input(type='submit' value='Login')
+            .sign-txt
+                | Not yet member? 
+                a(href='/register') Signup now
+        block scripts
+            script(src="/js/client/loginPage.js")

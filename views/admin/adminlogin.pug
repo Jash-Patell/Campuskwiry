@@ -1,0 +1,20 @@
+extends ../layouts/admin-loginlayouts.pug
+
+block content
+        .loginbody
+          .text
+            | Login Form
+          p.errorMessage #{errorMessage}
+          br
+          form(method='post')
+            .field
+              input(type='text' , name="logUsername"  , required='')
+              span.fas.fa-user
+              label Email or Username
+            .field
+              input(type='password' , name="logPassword" ,  required='')
+              span.fas.fa-lock
+              label Password
+            .forgot-pass
+              a(href='/adminlogin') Forgot Password?
+            button(type='submit') Sign in
