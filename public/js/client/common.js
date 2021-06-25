@@ -534,7 +534,7 @@ function createPostHtml(postData, largeFont = false) {
                                     <i class="far fa-hand-spock"></i>
                                 </button>
                             </div>
-                            <div class='postButtonContainer green'>
+                            <div class='postButtonContainer yellow'>
                                 <button class='retweetButton ${retweetButtonActiveClass}'>
                                     <i class='bx bx-analyse'></i>
                                     <span>${
@@ -542,7 +542,7 @@ function createPostHtml(postData, largeFont = false) {
                                     }</span>
                                 </button>
                             </div>
-                            <div class='postButtonContainer red'>
+                            <div class='postButtonContainer green'>
                                 <button class='likeButton ${likeButtonActiveClass}'>
                                     <i class='bx bx-like'></i>
                                     <span>${postData.likes.length || ""}</span>
@@ -550,7 +550,7 @@ function createPostHtml(postData, largeFont = false) {
                             </div>
                             <div class='postButtonContainer red'>
                                 <button class='dislikeButton ${dislikeButtonActiveClass}'>
-                                    <i class='bx bx-like bx-rotate-180' ></i>
+                                    <i class='bx bx-message-alt-error' ></i>
                                     <span>${postData.dislikes.length || ""}</span>
                                 </button>
                             </div>

@@ -8,10 +8,13 @@
     --spacing: 15px;
     --greyText: rgb(101, 119, 134);
     --greyButtonText: rgba(0,0,0,0.34);
-    --red: #b71c1c;
+    --pink: rgb(226,34,94);
+    --red: #940909;
     --redBackground: rgba(226,34,94,0.1);
     --green: rgb(23,191,99);
     --greenBackground: rgba(23,191,99,0.1);
+    --yellow: rgb(233, 141, 55);
+    --yellowBackground: rgba(191, 188, 23, 0.1);
 }
 
 html, body {
@@ -251,6 +254,15 @@ button span {
 .postButtonContainer.red button:hover {
     color: var(--red);
     background-color: var(--redBackground)
+}
+
+.postButtonContainer.yellow button.active {
+    color: var(--yellow);
+}
+
+.postButtonContainer.yellow button:hover {
+    color: var(--yellow);
+     background-color: var(--yellowBackground);
 }
 
 .postButtonContainer.green button.active {
@@ -812,7 +824,7 @@ button span {
 
 #notificationBadge,
 #messagesBadge {
-    background-color: var(--red);
+    background-color: var(--pink);
     height: 25px;
     width: 25px;
     border-radius: 50%;

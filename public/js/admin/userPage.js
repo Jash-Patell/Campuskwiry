@@ -29,6 +29,54 @@ $(document).ready(() => {
                 <th>Total Reasked</th>
               </tr>
             </thead>
+            <tbody>
+            <tr>
+              <td>Harsh More</td>
+              <td>harsh@gmail.com</td>
+              <td>0</td>
+              <td>2</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Vishv Patel</td>
+              <td>vishv@gmail.com</td>
+              <td>1</td>
+              <td>1</td>
+              <td>2</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Raj Sakariya</td>
+              <td>raj@gmail.com</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Ritik Patel</td>
+              <td>ritik@gmail.com</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jash</td>
+              <td>jash@gmail.com</td>
+              <td>1</td>
+              <td>2</td>
+              <td>1</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.container-fluid -->
             `);
 
         // for (const result in results) {
@@ -39,7 +87,7 @@ $(document).ready(() => {
 
         Object.values(results).forEach(result => {
           var html = Userdetail(result)
-          console.log(html);
+            console.log(html);
             container.append(html)
         });
 

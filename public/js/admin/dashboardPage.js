@@ -22,7 +22,7 @@ $(document).ready(() => {
                 <span class="text">Up from yesterday</span>
               </div>
             </div>
-            <i class='bx bx-cart-alt cart'></i>
+           <i class='bx bxs-face-mask cart'></i>
           </div>
           <div class="box">
             <div class="right-side">
@@ -33,7 +33,7 @@ $(document).ready(() => {
                 <span class="text">Up from yesterday</span>
               </div>
             </div>
-            <i class='bx bxs-cart-add cart two' ></i>
+            <i class='bx bxs-report cart two'></i>
           </div>
           <div class="box">
             <div class="right-side">
@@ -44,18 +44,18 @@ $(document).ready(() => {
                 <span class="text">Up from yesterday</span>
               </div>
             </div>
-            <i class='bx bx-cart cart three' ></i>
+            <i class='bx bx-like cart three' ></i>
           </div>
           <div class="box">
             <div class="right-side">
-              <div class="box-topic">Total Reasked</div>
-              <div class="number">${results.total_Reasked}</div>
+              <div class="box-topic">Total Report</div>
+              <div class="number">${results.total_Disliked}</div>
               <div class="indicator">
                 <i class='bx bx-down-arrow-alt down'></i>
                 <span class="text">Down From Today</span>
               </div>
             </div>
-            <i class='bx bxs-cart-download cart four' ></i>
+            <i class='bx bx-dislike cart four' ></i>
           </div>
           </br>
           </br>
@@ -67,13 +67,13 @@ $(document).ready(() => {
           <div class="box">
           <div class="right-side">
             <div class="box-topic">Total Reasked</div>
-            <div class="number">${results.total_Disliked}</div>
+            <div class="number">${results.total_Reasked}</div>
             <div class="indicator">
               <i class='bx bx-down-arrow-alt down'></i>
               <span class="text">Down From Today</span>
             </div>
           </div>
-          <i class='bx bxs-cart-download cart four' ></i>
+          <i class='bx bx-repost cart four' ></i>
         </div>
         </div> `);
     }
